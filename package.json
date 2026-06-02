@@ -1,0 +1,20 @@
+{
+  "name": "service-scanner-landing-page",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.4.6",
+    "vue": "^3.5.34"
+  },
+  "devDependencies": {
+    "@nuxt/icon": "^2.2.2",
+    "@nuxtjs/tailwindcss": "^7.0.0-beta.1"
+  }
+}
