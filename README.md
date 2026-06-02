@@ -1,75 +1,41 @@
-# Nuxt Minimal Starter
+# Fujitsu Scanner Service - Landing Page
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Ini adalah proyek *landing page* responsif dan interaktif untuk layanan perbaikan scanner spesialis Fujitsu, yang dibangun menggunakan ekosistem **Nuxt 4** dan **Tailwind CSS v4**. 
 
-## Setup
+Proyek ini dibangun secara modular menggunakan Vue.js, memanfaatkan transisi halaman *Single Page Application* (SPA), sistem komponen terpisah, dan terintegrasi dengan utilitas form seperti Vuelidate.
 
-Make sure to install dependencies:
+## Persyaratan Sistem (Requirements)
 
-```bash
-# npm
-npm install
+Sebelum melakukan instalasi dan pengembangan, pastikan perangkat Anda telah memiliki:
+- **Node.js** (Direkomendasikan versi 18.x LTS, 20.x, atau yang lebih baru)
+- **NPM** (Otomatis terinstal bersama Node.js)
 
-# pnpm
-pnpm install
+## Instalasi dan Cara Menjalankan
 
-# yarn
-yarn install
+1. **Instalasi Dependencies**
+   Buka terminal atau CMD Anda, arahkan ke folder utama proyek (*root folder*), lalu jalankan:
+   ```bash
+   npm install
+   ```
+   *(Proses ini akan mengunduh semua pustaka yang dibutuhkan seperti Nuxt, Vue, Vuelidate, TailwindCSS, dan ikon)*.
 
-# bun
-bun install
-```
+2. **Menjalankan Mode Development (Local)**
+   Untuk memulai server pengembangan dengan fitur *Hot Module Replacement* (HMR), jalankan:
+   ```bash
+   npm run dev
+   ```
+   Buka *browser* Anda dan kunjungi `http://localhost:3000`. Setiap kali Anda menyimpan file, tampilan akan otomatis diperbarui.
 
-## Development Server
+3. **Build untuk Produksi (Production)**
+   Jika aplikasi sudah siap diluncurkan (deploy), Anda harus melakukan *build* terlebih dahulu:
+   ```bash
+   npm run build
+   ```
+   Aplikasi kemudian dapat di-hosting sesuai ekosistem Nitro dari Nuxt.
 
-Start the development server on `http://localhost:3000`:
+## Struktur Proyek Utama
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- `app/pages/`: Berisi seluruh dokumen rute halaman seperti Beranda (`index.vue`), Layanan (`services.vue`), Kontak (`contact.vue`), dan lain-lain.
+- `app/components/global/`: Berisi komponen antar muka permanen seperti navigasi `MainHeader.vue` dan `MainFooter.vue`.
+- `app/layouts/`: Mengatur tata letak kerangka utama halaman bawaan Nuxt.
+- `nuxt.config.ts`: Konfigurasi inti framework Nuxt.
